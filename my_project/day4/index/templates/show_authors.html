@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h2 style="color:red;">显示一个作者信息为:</h2>
+    <h3>id:{{auth.id}}</h3>
+    <h3>name:{{auth.name}}</h3>
+    <h3>age:{{auth.age}}</h3>
+    <h3>email:{{auth.email}}</h3>
+
+    <h2>所有的作者信息如下：</h2>
+    {% for author in authors %}
+        <p>ID:{{author.id}}</p>
+        <p>NAME:{{author.name}}</p>
+        <p>AGE:{{author.age}}</p>
+        <p>EMAIL:{{author.email}}</p>
+    {% endfor %}
+</body>
+</html>

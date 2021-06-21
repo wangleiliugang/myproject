@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>{{book.title}}的作者：</h3>
+    {% for au in auList %}
+        <p>姓名:{{au.name}}</p>
+        <p>年龄:{{au.age}}</p>
+    {% endfor %}
+    <h3>****{{au.name}}著作的书籍：****</h3>
+    {% for book in bookList %}
+        <p>书名:{{book.title}}</p>
+        <p>出版日期:{{book.publication_date}}</p>
+    {% endfor %}
+</body>
+</html>

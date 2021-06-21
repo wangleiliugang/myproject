@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="/widget1/" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <p>
+            <input type="submit" value="提交">
+        </p>
+    </form>
+</body>
+</html>

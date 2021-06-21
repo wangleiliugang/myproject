@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+  <h3>正向查询goods --> goodsType</h3>
+  <p>商品名称:{{goods.title}}</p>
+  <p>价格:{{goods.price}}</p>
+  <p>规格:{{goods.spec}}</p>
+  <p>类型名称:{{goodsType.title}}</p>
+  <p>
+      商品图片:<img src="/{{goods.picture}}">
+  </p>
+  <h3>反向查询：</h3>
+  <p>类型名称:{{gtype.title}}</p>
+  {% for g in gds %}
+    <p>{{g.title}}</p>
+    <p>{{g.price}}</p>
+    <p>{{g.spec}}</p>
+    <p>
+      <img src="/{{g.picture}}">
+    </p>
+  {% endfor %}
+</body>
+</html>

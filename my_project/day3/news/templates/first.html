@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>
+        <!-- 使用根相对路径 -->
+        <!-- <a href="/news/second/">去往second页面</a> -->
+        <a href="{% url 'second'%}">去往second页面</a>
+    </h1>
+    <h1>
+        <!-- <a href="/news/show/35">去往show.html</a> -->
+        <a href="{% url 'show' 87%}">去往show.html</a>
+    </h1>
+    <h1>
+        <a href="{% url 'add' 25 12%}">计算两个数的和</a>
+    </h1>
+</body>
+</html>

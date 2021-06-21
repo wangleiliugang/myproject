@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>作者{{author.name}}的签约出版社为：</h3>
+    {% for pub in pubList %}
+        <p>出版社：{{pub.name}}</p>
+        <p>地址：{{pub.address}}</p>
+    {% endfor %}
+    <h3>****出版社{{pub.name}}的签约作者为：****</h3>
+    {% for au in authorList %}
+        <p>作者：{{au.name}}</p>
+        <p>邮箱：{{au.email}}</p>
+    {% endfor %}
+</body>
+</html>
